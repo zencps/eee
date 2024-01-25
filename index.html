@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A responsive, purely client-side web calculator built with HTML, CSS, and JavaScript.">
+  <title>Web Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="calculator">
+
+    <section class="display">
+      <div class="line expression-track">
+        <span id="expression" class="expression">&nbsp;</span>
+      </div>
+      <div class="line result-track">
+        <span id="result" class="result">0</span>
+      </div>
+    </section>
+
+    <section class="keypad">
+
+      <button type="button" class="key function" data-action="clear">C</button>
+      <button type="button" class="key function" data-action="delete">DEL</button>
+      <button type="button" class="key operator" data-operator="/">÷</button>
+      <button type="button" class="key operator" data-operator="*">×</button>
+
+      <button type="button" class="key number" data-digit="7">7</button>
+      <button type="button" class="key number" data-digit="8">8</button>
+      <button type="button" class="key number" data-digit="9">9</button>
+      <button type="button" class="key operator" data-operator="-">−</button>
+
+      <button type="button" class="key number" data-digit="4">4</button>
+      <button type="button" class="key number" data-digit="5">5</button>
+      <button type="button" class="key number" data-digit="6">6</button>
+      <button type="button" class="key operator" data-operator="+">+</button>
+
+      <button type="button" class="key number" data-digit="1">1</button>
+      <button type="button" class="key number" data-digit="2">2</button>
+      <button type="button" class="key number" data-digit="3">3</button>
+      <button type="button" class="key equals" data-action="equals">=</button>
+
+      <button type="button" class="key number zero" data-digit="0">0</button>
+      <button type="button" class="key number" data-digit=".">⋅</button>
+
+    </section>
+
+    <footer class="watermark">made by zencps</footer>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
